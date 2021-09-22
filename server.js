@@ -3,10 +3,21 @@ const cors = require("cors");
 const config = require("./app/config");
 const setupContactRoutes = require("./app/routers/contact.route");
 const {BadRequestError} = require("./app/helper/error");
+const db = require("./app/model");
 
 const app = express();
 
 setupContactRoutes(app);
+app.use(express.urlencoded({ extended: true }));
+
+db.mongoose.connect(config.db.url)
+    .then(() => {
+        console.log("connected")
+    })
+    .catch((error) => {
+        console.log("error connect!", error);
+        process.exit();
+    })
 
 app.use(cors({ origin: config.app.origins }));
 
