@@ -10,9 +10,15 @@
   "author": "thanhloc",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.0-4",
+    "axios": "^0.23.0",
+    "bootstrap": "^4.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^6.0.7"
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.7",
+    "popper.js": "^1.16.1",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
