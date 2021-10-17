@@ -62,7 +62,7 @@
 
 <script>
 import contactDetail from "../components/contactDetail.vue";
-import contactService from "../service/contact.service";
+import contactService from "../service/contactService";
 
 export default {
   name: "contactBook",

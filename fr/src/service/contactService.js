@@ -6,7 +6,7 @@ class contactService {
     }
 
     getId(id) {
-        return http.get("/contacts/${id}");
+        return http.get('/contacts/${id}');
     }
 
     create(data) {
@@ -14,11 +14,11 @@ class contactService {
     }
 
     update(id, data) {
-        return http.put("contacts/${id}", data);
+        return http.put('contacts/${id}', data);
     }
 
     delete(id) {
-        return http.delete("/contacts/${id}");
+        return http.delete('/contacts/${id}');
     }
 
     deleteAll() {
@@ -26,7 +26,7 @@ class contactService {
     }
 
     findByName(name) {
-        return http.get("/contacs?name=${name}");
+        return http.get('/contacs?name=${name}');
     }
 }
 
